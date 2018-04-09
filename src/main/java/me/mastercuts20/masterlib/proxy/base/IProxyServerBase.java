@@ -22,4 +22,9 @@ public interface IProxyServerBase extends IProxyBase {
         return Side.SERVER;
     }
 
+    @Override
+    default Side getEffectiveSide(){
+        return getPhysicalSide();
+    }
+
 }

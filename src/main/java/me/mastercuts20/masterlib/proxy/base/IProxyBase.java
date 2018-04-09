@@ -99,4 +99,8 @@ public interface IProxyBase {
 
 
     Side getEffectiiveSide();
+
+    Side getPhysicalside();
+
+    Side getEffectiveSide();
 }
